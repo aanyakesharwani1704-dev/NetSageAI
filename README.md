@@ -1,6 +1,6 @@
-# RouteWise AI
+# NetSageAI
 
-RouteWise AI is an AI-assisted troubleshooting helper for Cisco-style lab networks. It pairs deterministic rule checks with an LLM-powered diagnosis pass, and every suggested fix is gated behind mandatory human review before it counts as accepted.
+NetSageAI is an AI-assisted troubleshooting helper for Cisco-style lab networks. It pairs deterministic rule checks with an LLM-powered diagnosis pass, and every suggested fix is gated behind mandatory human review before it counts as accepted.
 
 ## Features
 
@@ -31,7 +31,7 @@ Clone the repository:
 
 ```bash
 git clone <your-repo-url>
-cd RouteWiseAI
+cd NetSageAI
 ```
 
 Create a Python virtual environment:
@@ -98,7 +98,7 @@ Open the URL in a browser.
 1. Select a troubleshooting case from the Case Explorer.
 2. Review the symptom, topology note, and captured show-command output.
 3. Select **Run Hybrid Diagnosis**.
-4. RouteWise AI runs deterministic checks using `src/checker.py`.
+4. NetsageAi runs deterministic checks using `src/checker.py`.
 5. The application sends the case evidence to the LLM using the structured prompt in `prompts/diagnose_prompt.md`.
 6. The deterministic result and LLM response are merged into a final diagnosis.
 7. Review the diagnosis and proposed CLI steps.
@@ -118,7 +118,7 @@ The dashboard displays a warning when this fallback is used. The LLM pass is rec
 ## Project Structure
 
 ```text
-RouteWiseAI/
+NetsageAi/
 ├── data/
 │   ├── cases.csv              # Troubleshooting case dataset
 │   └── review_log.csv         # Structured human review records
@@ -170,3 +170,4 @@ The dashboard calculates:
 - Recent human overrides
 
 To add five demonstration correction records for the Responsible AI workflow, click **Seed 5 demo correction logs** in the dashboard sidebar.
+
