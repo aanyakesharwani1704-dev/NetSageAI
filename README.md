@@ -350,8 +350,3 @@ The application:
 
 Any configuration change should be verified by an authorized network operator before being applied to a real device.
 
-
-**DEMO VIDEO:**
-
-[▶️ Watch NetSageAI Demo Video](https://drive.google.com/file/d/1oZDtApykuYMuKBv3DeO2SUilYqD_Dzc6/view?usp=sharing)
-
